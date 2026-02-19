@@ -1,0 +1,87 @@
+---
+alwaysApply: true
+---
+
+# TypeScript: Use Type Instead of Interface
+
+Always use `type` declarations instead of `interface` declarations in this project.
+
+## Rules
+
+- ❌ **Never** use `interface` keyword
+- ✅ **Always** use `type` keyword for object type definitions
+- ✅ Use `type` for React component props
+- ✅ Use `type` for function return types and parameters
+
+## Examples
+
+### Component Props
+
+```typescript
+// ❌ BAD
+interface ButtonProps {
+  label: string;
+  onClick: () => void;
+}
+
+// ✅ GOOD
+type ButtonProps = {
+  label: string;
+  onClick: () => void;
+};
+```
+
+### Type Definitions
+
+```typescript
+// ❌ BAD
+interface User {
+  id: string;
+  name: string;
+  email: string;
+}
+
+// ✅ GOOD
+type User = {
+  id: string;
+  name: string;
+  email: string;
+};
+```
+
+### Context Types
+
+```typescript
+// ❌ BAD
+interface PhotoContextType {
+  state: PhotoState;
+  setState: (state: PhotoState) => void;
+}
+
+// ✅ GOOD
+type PhotoContextType = {
+  state: PhotoState;
+  setState: (state: PhotoState) => void;
+};
+```
+
+## Type Composition
+
+Types support all the same features as interfaces:
+
+```typescript
+// Extending types
+type BaseProps = {
+  id: string;
+};
+
+type ExtendedProps = BaseProps & {
+  name: string;
+};
+
+// Union types (types are more flexible)
+type Status = "pending" | "success" | "error";
+
+// Intersection types
+type Props = ButtonProps & ThemeProps;
+```
