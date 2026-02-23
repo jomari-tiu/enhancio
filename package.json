@@ -17,6 +17,7 @@
     "@react-native-community/slider": "^4.5.3",
     "expo": "~52.0.0",
     "expo-asset": "~11.0.5",
+    "expo-dev-client": "~5.0.20",
     "expo-file-system": "~18.0.4",
     "expo-image-manipulator": "~13.0.5",
     "expo-media-library": "~17.0.3",

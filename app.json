@@ -30,7 +30,10 @@
         "READ_EXTERNAL_STORAGE",
         "WRITE_EXTERNAL_STORAGE",
         "CAMERA",
-        "READ_MEDIA_IMAGES"
+        "READ_MEDIA_IMAGES",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.ACCESS_MEDIA_LOCATION"
       ]
     },
     "web": {
@@ -48,6 +51,14 @@
       ],
       "expo-asset"
     ],
-    "scheme": "enhancio"
+    "scheme": "enhancio",
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "ab7a5168-3f35-4fe6-9231-fc5f76cbf3e1"
+      }
+    }
   }
 }
