@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(cd C:\\\\Users\\\\jomti\\\\OneDrive\\\\Desktop\\\\Workspace\\\\Mobile Applications\\\\enhancio:*)"
+      "Bash(cd C:\\\\Users\\\\jomti\\\\OneDrive\\\\Desktop\\\\Workspace\\\\Mobile Applications\\\\enhancio:*)",
+      "Bash(node:*)",
+      "Bash(npm view:*)"
     ]
   }
 }
